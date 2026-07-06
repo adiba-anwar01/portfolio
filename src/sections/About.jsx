@@ -8,7 +8,7 @@ export default function About() {
     <section id="about" className="py-24 bg-bg-secondary relative overflow-hidden">
       {}
       <div className="absolute inset-0 pointer-events-none flex items-center justify-center">
-        <div className="w-[600px] h-[600px] bg-accent-secondary opacity-[0.01] blur-[120px] rounded-full -translate-x-[30%] -translate-y-[30%]" />
+        <div className="w-[600px] h-[600px] bg-[radial-gradient(circle_at_center,rgba(251,146,60,0.01)_0%,transparent_65%)] -translate-x-[30%] -translate-y-[30%]" />
       </div>
 
       <div className="section-container relative z-10">
@@ -18,10 +18,10 @@ export default function About() {
 
         <AnimatedSection variants={fadeInUp} className="w-full mt-8 md:mt-12">
           <div className="max-w-4xl mx-auto">
-            <div className="relative p-6 md:p-8 bg-bg-card/40 backdrop-blur-xl border border-white/5 rounded-2xl shadow-2xl overflow-hidden group transition-all duration-500 hover:border-accent-primary/30 hover:shadow-accent-glow">
+            <div className="relative p-6 md:p-8 bg-bg-card border border-white/5 rounded-2xl shadow-2xl overflow-hidden group transition-all duration-500 hover:border-accent-primary/30 hover:shadow-accent-glow">
               {}
-              <div className="absolute -top-20 -right-20 w-48 h-48 bg-accent-primary/10 rounded-full blur-[60px] -z-10 group-hover:bg-accent-primary/20 transition-colors duration-700" />
-              <div className="absolute -bottom-20 -left-20 w-48 h-48 bg-accent-secondary/10 rounded-full blur-[60px] -z-10 group-hover:bg-accent-secondary/20 transition-colors duration-700" />
+              <div className="absolute -top-20 -right-20 w-48 h-48 bg-[radial-gradient(circle_at_center,rgba(249,115,22,0.1)_0%,transparent_70%)] -z-10 group-hover:bg-accent-primary/20 transition-colors duration-700" />
+              <div className="absolute -bottom-20 -left-20 w-48 h-48 bg-[radial-gradient(circle_at_center,rgba(251,146,60,0.1)_0%,transparent_70%)] -z-10 group-hover:bg-accent-secondary/20 transition-colors duration-700" />
 
               <div className="relative z-10 flex flex-col gap-3">
                 <div className="space-y-4 text-text-secondary leading-relaxed text-sm md:text-base text-justify md:text-left font-sans">

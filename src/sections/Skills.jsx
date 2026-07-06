@@ -21,7 +21,7 @@ export default function Skills() {
               className="h-full w-full"
             >
               <div
-                className="flex flex-col h-full p-6 rounded-2xl border transition-all duration-300 hover:border-accent-primary/40 bg-bg-card/30 hover:shadow-accent-glow hover:-translate-y-1 backdrop-blur-md border-border"
+                className="flex flex-col h-full p-6 rounded-2xl border transition-all duration-300 hover:border-accent-primary/40 bg-bg-card hover:shadow-accent-glow hover:-translate-y-1 border-border"
               >
                 {}
                 <div className="flex items-center gap-3 mb-5">

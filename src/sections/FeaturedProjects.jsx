@@ -54,7 +54,7 @@ export default function FeaturedProjects() {
                   </h3>
 
                   
-                  <div className="w-full p-5 md:p-6 bg-bg-card/25 backdrop-blur-xl border border-white/5 rounded-2xl shadow-2xl shadow-black/45 hover:shadow-orange-500/10 hover:border-accent-primary/20 transition-all duration-300">
+                  <div className="w-full p-5 md:p-6 bg-bg-card border border-white/5 rounded-2xl shadow-2xl shadow-black/45 hover:shadow-orange-500/10 hover:border-accent-primary/20 transition-all duration-300">
                     
                     <p className="text-text-secondary text-base md:text-[17px] leading-relaxed w-full">
                       {project.description}

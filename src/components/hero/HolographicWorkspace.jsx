@@ -20,7 +20,7 @@ function GlassMonitor3D({ width, height, thickness = 10, className = "", style =
           transform: `translate3d(0px, 0px, ${T / 2}px)`,
           transformStyle: 'preserve-3d',
         }}
-        className="absolute inset-0 rounded-2xl border border-white/[0.15] bg-gradient-to-br from-white/[0.07] to-white/[0.02] backdrop-blur-[20px] shadow-[inset_0_1px_1px_rgba(255,255,255,0.15),0_0_10px_rgba(129,140,248,0.12)] overflow-hidden"
+        className="absolute inset-0 rounded-2xl border border-white/[0.15] bg-gradient-to-br from-slate-900/95 to-slate-950/98 shadow-[inset_0_1px_1px_rgba(255,255,255,0.15),0_0_10px_rgba(129,140,248,0.12)] overflow-hidden"
       >
         {children}
       </div>
@@ -101,10 +101,8 @@ export default function HolographicWorkspace() {
     >
       
       <div className="absolute inset-0 pointer-events-none flex items-center justify-center z-0">
-        
-        <div className="absolute w-[320px] h-[320px] bg-indigo-600/10 blur-[90px] rounded-full -translate-x-12 -translate-y-8" />
-        
-        <div className="absolute w-[340px] h-[340px] bg-blue-600/10 blur-[100px] rounded-full translate-x-16 translate-y-12" />
+        <div className="absolute w-[320px] h-[320px] bg-[radial-gradient(circle_at_center,rgba(79,70,229,0.08)_0%,transparent_65%)] -translate-x-12 -translate-y-8" />
+        <div className="absolute w-[340px] h-[340px] bg-[radial-gradient(circle_at_center,rgba(37,99,235,0.08)_0%,transparent_65%)] translate-x-16 translate-y-12" />
       </div>
 
       

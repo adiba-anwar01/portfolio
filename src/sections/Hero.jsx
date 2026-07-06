@@ -15,7 +15,7 @@ export default function Hero() {
     >
       {}
       <div className="absolute inset-0 pointer-events-none flex items-center justify-center">
-        <div className="w-[800px] h-[800px] bg-accent-primary opacity-[0.02] blur-[150px] rounded-full -translate-x-[25%] -translate-y-[25%]" />
+        <div className="w-[800px] h-[800px] bg-[radial-gradient(circle_at_center,rgba(249,115,22,0.02)_0%,transparent_65%)] -translate-x-[25%] -translate-y-[25%]" />
       </div>
 
       <div className="section-container w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">

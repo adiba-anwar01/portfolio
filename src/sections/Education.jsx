@@ -20,7 +20,7 @@ export default function Education() {
     <section id="education" className="py-24 bg-bg-secondary relative overflow-hidden">
       {}
       <div className="absolute inset-0 pointer-events-none flex items-center justify-center">
-        <div className="w-[600px] h-[600px] bg-accent-primary opacity-[0.015] blur-[130px] rounded-full translate-x-[20%] translate-y-[20%]" />
+        <div className="w-[600px] h-[600px] bg-[radial-gradient(circle_at_center,rgba(249,115,22,0.015)_0%,transparent_65%)] translate-x-[20%] translate-y-[20%]" />
       </div>
 
       <div className="section-container relative z-10">
