@@ -48,11 +48,8 @@
 ```
 Portfolio/
 ├── public/
-│   ├── favicon.svg          # Site favicon
-│   └── icons.svg            # SVG icon sprite
+│   └── favicon.svg          # Site favicon
 ├── src/
-│   ├── assets/
-│   │   └── hero.png         # Hero section image
 │   ├── components/
 │   │   ├── hero/
 │   │   │   └── HolographicWorkspace.jsx   # Animated 3D hero scene
