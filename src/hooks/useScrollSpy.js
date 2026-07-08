@@ -4,41 +4,42 @@ export function useScrollSpy(sectionIds, offset = 80) {
   const [activeId, setActiveId] = useState('');
 
   useEffect(() => {
-    const elements = sectionIds
-      .map((id) => document.getElementById(id))
-      .filter(Boolean);
-
-    const observerOptions = {
-      root: null,
-      rootMargin: `-${offset}px 0px -40% 0px`,
-      threshold: 0,
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActiveId(entry.target.id);
-        }
-      });
-    }, observerOptions);
-
-    elements.forEach((el) => observer.observe(el));
-
     const handleScroll = () => {
+      if (window.scrollY < offset) {
+        setActiveId('');
+        return;
+      }
+
       if (
         window.innerHeight + window.scrollY >=
         document.documentElement.scrollHeight - 10
       ) {
         setActiveId(sectionIds[sectionIds.length - 1]);
+        return;
+      }
+
+      let currentId = '';
+      for (const id of sectionIds) {
+        const el = document.getElementById(id);
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          // If the section's top is past the offset (plus a little buffer)
+          if (rect.top <= offset + 150) {
+            currentId = id;
+          }
+        }
+      }
+
+      if (currentId) {
+        setActiveId(currentId);
       }
     };
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
+    // Run once on mount to set initial state
+    handleScroll();
 
-    return () => {
-      observer.disconnect();
-      window.removeEventListener('scroll', handleScroll);
-    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
   }, [sectionIds, offset]);
 
   return activeId;

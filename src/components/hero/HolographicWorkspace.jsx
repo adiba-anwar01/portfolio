@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import { useInView } from 'framer-motion';
 
 
 function GlassMonitor3D({ width, height, thickness = 10, className = "", style = {}, children }) {
@@ -78,6 +79,7 @@ function GlassMonitor3D({ width, height, thickness = 10, className = "", style =
 
 export default function HolographicWorkspace() {
   const containerRef = useRef(null);
+  const isInView = useInView(containerRef, { margin: "200px 0px" });
 
   const handleMouseEnter = () => {
     if (!containerRef.current) return;
@@ -96,7 +98,7 @@ export default function HolographicWorkspace() {
       ref={containerRef}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="relative w-full h-[450px] md:h-[550px] flex items-center justify-center cursor-default select-none perspective-container z-20"
+      className={`relative w-full h-[450px] md:h-[550px] flex items-center justify-center cursor-default select-none perspective-container z-20 ${!isInView ? 'pause-animations' : ''}`}
       style={{ perspective: '1800px' }}
     >
       

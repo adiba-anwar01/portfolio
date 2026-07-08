@@ -3,7 +3,7 @@ export const experience = [
   {
     id: 1,
     company: 'IIIT Delhi',
-    position: 'Project Intern',
+    position: 'Project Intern - Software Developer',
     duration: 'Jun 2026 – Jul 2026',
     type: 'On-site',
     contributions: [

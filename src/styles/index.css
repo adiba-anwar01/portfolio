@@ -369,3 +369,7 @@
   stroke-dasharray: 4 4;
   animation: dash 3s linear infinite;
 }
+
+.pause-animations * {
+  animation-play-state: paused !important;
+}

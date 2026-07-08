@@ -21,7 +21,7 @@ export const featuredProjects = [
     github: 'https://github.com/adiba/vendorlink',
     live: 'https://vendorlink.vercel.app',
     accentColor: 'from-sky-500/20 to-blue-600/10',
-    screenshot: 'https://picsum.photos/seed/vendorlink/800/500',
+    screenshot: '/assets/projects/vendorlink.png',
   },
   {
     id: 2,
@@ -43,7 +43,7 @@ export const featuredProjects = [
     github: 'https://github.com/adiba/cafeno',
     live: 'https://cafeno.vercel.app',
     accentColor: 'from-amber-600/20 to-orange-700/10',
-    screenshot: 'https://picsum.photos/seed/cafeno/800/500',
+    screenshot: '/assets/projects/cafeno.png',
   },
   {
     id: 3,
@@ -66,7 +66,7 @@ export const featuredProjects = [
     github: 'https://github.com/adiba/smart-leads',
     live: 'https://smart-leads.vercel.app',
     accentColor: 'from-blue-500/20 to-indigo-600/10',
-    screenshot: 'https://picsum.photos/seed/smartleads/800/500',
+    screenshot: '/assets/projects/smartleads.png',
   },
 ];
 
